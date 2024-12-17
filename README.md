@@ -63,4 +63,43 @@
 + 적용 (COMMIT) : 트렌젝션에서 발생한 데이터 조작(검색X)에 대하여 저장 하라는 명령어
 + 취소 (ROLLBACK) : 트렌젝션에서 발생한 데이터 조작의 내용을 취소 하라는 명령어
 
+## [MARIADB DATA TYPE](https://mariadb.com/kb/en/data-types/)
++ [정수형](https://mariadb.com/kb/en/data-types-numeric-data-types/)
++ [문자형](https://mariadb.com/kb/en/string-data-types/)
++ [날짜형](https://mariadb.com/kb/en/date-and-time-data-types/)
+- 기타
+    - [AUTO INCREMENT](https://mariadb.com/kb/en/auto_increment/)
+    - [NULL Values](https://mariadb.com/kb/en/null-values/)
 
+## DML 작성법
++ [INSERT 알아보기](https://mariadb.com/kb/en/insert/)
+```sql
+INSERT INTO [테이블명] ( [컬럼명] ) VALUE ( [값] );
+```
+
++ [UPDATE 알아보기](https://mariadb.com/kb/en/update/)
+```sql
+UPDATE [테이블명] SET [컬럼명] = [값] WHERE [조건식]
+```
+
++ [DELETE 알아보기](https://mariadb.com/kb/en/delete/)
+```sql
+DELETE FROM [테이블명] WHERE [조건식]
+```
+
++ [SELECT - OPERATORS 알아보기](https://mariadb.com/kb/en/operators/)
+```sql
+SELECT [컬럼명] FROM [테이블명] WHERE [조건식]
+```
+
++ [SELECT - ORDER BY 알아보기](https://mariadb.com/kb/en/order-by/)
+```sql
+SELECT [컬럼명] FROM [테이블명] ORDER BY [컬럼명 또는 인덱스]
+```
+> 정렬 키워드 : [ASC] or [DESC]
+
++ [SELECT - GROUP BY 알아보기](https://mariadb.com/kb/en/group-by/)
+```sql
+SELECT [컬럼명], [집계함수] FROM [테이블명] WHERE [조건식] GROUP BY [컬럼명]
+```
+> [함수 알아보기](https://mariadb.com/kb/en/built-in-functions/)
